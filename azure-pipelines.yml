@@ -1,10 +1,3 @@
-### YamlMime:Yaml
-ms.openlocfilehash: 942b6ae523b9cb5e8608d6fbe2882737415dcd51
-ms.sourcegitcommit: b47c339c27f2e4e7b175dfe46d4db4d049fd0edd
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "112739278"
 trigger:
 - main
 resources:
@@ -14,7 +7,7 @@ variables:
   webRepository: web
   tag: $(Build.BuildId)
   vmImageName: ubuntu-latest
-  
+
 stages:
 - stage: Build
   displayName: Build and publish Java container
