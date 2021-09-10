@@ -8,28 +8,13 @@ ms.locfileid: "112739278"
 trigger:
 - main
 resources:
-- repo: self
-
-### YamlMime:Yaml
-ms.openlocfilehash: 0d95a85946c3580c7a678d53afddbfa5ee08209f
-ms.sourcegitcommit: b47c339c27f2e4e7b175dfe46d4db4d049fd0edd
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "112739278"
+- repo: self"
 variables:
   dockerfilePath: $(Build.SourcesDirectory)/src/Dockerfile
   webRepository: web
   tag: $(Build.BuildId)
   vmImageName: ubuntu-latest
-  ### YamlMime:Yaml
-ms.openlocfilehash: 652994a291aa8f3a4880d13a0a8fa212e86f1275
-ms.sourcegitcommit: b47c339c27f2e4e7b175dfe46d4db4d049fd0edd
-ms.translationtype: HT
-ms.contentlocale: ja-JP
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "112739278"
-
+  
 stages:
 - stage: Build
   displayName: Build and publish Java container
