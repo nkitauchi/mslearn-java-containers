@@ -1,7 +1,7 @@
 trigger:
 - main
 resources:
-- repo: self"
+- repo: self
 variables:
   dockerfilePath: $(Build.SourcesDirectory)/src/Dockerfile
   webRepository: web
